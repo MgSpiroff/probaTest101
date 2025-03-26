@@ -1,0 +1,89 @@
+@media (max-width: 1000px) {
+    main {
+        flex-wrap: wrap;
+    }
+    aside {
+        flex-grow: 1;
+    }
+    section {
+        flex-grow: 1;
+    }
+}
+@media screen and (max-width: 500px) {
+    main {
+        flex-wrap: wrap;
+    }
+    aside {
+        width: 100%;
+    }
+    aside p {
+        width: 95%;
+    }
+    .first {
+        flex-direction: column;
+    }
+}
+main>*, footer>* {
+    font-size: 20px;
+    color: white;
+}
+header {
+    background-color: darkgreen;
+    font-weight: bold;
+    color: white;
+}
+h3 {
+    font-weight: bold;
+}
+header>h1 {
+    padding: 20px;
+}
+main, footer, body, aside {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+aside>p, article {
+    background-color: darkorange;
+}
+article {
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+section>* {
+    color: black;
+}
+footer {
+    background-color: lightgreen;
+}
+footer>p {
+    width: 100%;
+    text-align: center;
+}
+body {
+    flex-direction: column;
+    padding: 20px;
+}
+header, footer {
+    width: 100%;
+}
+main {
+    margin: 0 20px;
+}
+aside {
+    flex-direction: column;
+    gap: 10px;
+}
+aside>p {
+    margin: 0;
+    padding: 10px;
+}
+.first {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
